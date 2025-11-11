@@ -90,7 +90,7 @@ jobs:
         run: |
           gsutil cp spark_job/spark_transformation_job.py gs://flightbooking-airflow-1/flight-data/spark-job/
 
-      # Sync Airflow DAG to Airflow PROD Composer
+      # Sync Airflow DAG to Airflow PROD Composers
       - name: Upload Airflow DAG to PROD
         run: |
           gcloud composer environments storage dags import \
